@@ -1,19 +1,8 @@
 import './App.css'
 import data from './data.json'
 import Post from './components/Post'
-import Header from './components/Header';
-
-type PostType = {
-    img_url: string,
-    description: string,
-    likes: number,
-    name_user: string,
-    date: string
-};
-
-type PostsType = {
-  data: PostType[]
-}
+import Header from './components/Header'
+import type { PostsType } from './types/PostsType.type'
 
 function App() {
   const posts: PostsType = data;
