@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './Post.css'
 
 type postType = {
@@ -13,6 +14,13 @@ type postsType = {
 }
 
 export default function Post({post}: postsType) {
+    const [likes, setLikes] = useState(0);
+
+    function counterLikes() {
+        setLikes(prevLikes => {
+            return prevLikes + 1
+        })
+    }
     return (
         <article className="post">
             <div className="block-img">
@@ -21,7 +29,7 @@ export default function Post({post}: postsType) {
             <div className="under-post">
                 <div className='des-and-likes'>
                     <p>{post.description}</p>
-                    <h4>{post.likes}</h4>
+                    <button className='btn-likes' onClick={counterLikes}>{likes} ❤️</button>
                 </div>
                 <div className='name-and-date'>
                     <h3>{post.name_user}</h3>

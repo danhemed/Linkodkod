@@ -41,9 +41,33 @@
     align-items: center;
 }
 
-.posts {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 20px 10vw;
+.btn-likes {
+    border: 1px solid rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
+
+.btn-likes:hover {
+    transform: scale(1.1);
+    border: 1px solid magenta;
+    box-shadow: 0px 0px 20px 0px rgba(255, 0, 255, 0.3);
+    border-radius: 20px;
+}
+
+p {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: rgb(1 61 109);
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(95, 95, 95);
+}
+
+h6 {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: gray;
 }
