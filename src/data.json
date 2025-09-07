@@ -1,0 +1,45 @@
+{
+    "data" : [
+    {
+    "img_url": "/images/images-posts/dog-image.jpeg",
+    "description": "cute dog",
+    "likes": 0,
+    "name_user": "dan",
+    "date": "07/09/2025 11:04"
+    },
+    {
+    "img_url": "/images/images-posts/horse-image.jpeg",
+    "description": "strong horse",
+    "likes": 0,
+    "name_user": "eli",
+    "date": "07/09/2025 13:08"
+    },
+    {
+    "img_url": "/images/images-posts/bear-image.jpeg",
+    "description": "scary bear",
+    "likes": 0,
+    "name_user": "meni",
+    "date": "07/09/2025 10:45"
+    },
+    {
+    "img_url": "/images/images-posts/sheep-image.jpeg",
+    "description": "woolen sheep",
+    "likes": 0,
+    "name_user": "meir",
+    "date": "07/09/2025 12:33"
+    },
+    {
+    "img_url": "/images/images-posts/rabbit-image.jpeg",
+    "description": "cute rabbit",
+    "likes": 0,
+    "name_user": "zoshe",
+    "date": "07/09/2025 15:44"
+    },
+    {
+    "img_url": "/images/images-posts/lion-image.jpeg",
+    "description": "king lion",
+    "likes": 0,
+    "name_user": "avi",
+    "date": "07/09/2025 14:20"
+    }]
+}
