@@ -1,0 +1,30 @@
+.post {
+    color: black;
+    background-color: rgb(235, 235, 235);
+    width: 100%;
+    padding: 2vw;
+}
+
+.post > img {
+    height: 150px;
+}
+
+
+.under-post {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 2vw;
+}
+
+.des-and-likes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name-and-date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
