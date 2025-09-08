@@ -1,45 +1,45 @@
 {
-    "data" : [
+    "posts" : [
     {
-    "img_url": "/images/images-posts/dog-image.jpeg",
-    "description": "cute dog",
+    "id": "1",
+    "description": "כלב מחמד",
     "likes": 0,
-    "name_user": "dan",
+    "name_user": "דן",
     "date": "07/09/2025 11:04"
     },
     {
-    "img_url": "/images/images-posts/horse-image.jpeg",
-    "description": "strong horse",
+    "id": "2",
+    "description": "סוס חזק",
     "likes": 0,
-    "name_user": "eli",
+    "name_user": "אלי",
     "date": "07/09/2025 13:08"
     },
     {
-    "img_url": "/images/images-posts/bear-image.jpeg",
-    "description": "scary bear",
+    "id": "3",
+    "description": "דוב מפחיד",
     "likes": 0,
-    "name_user": "meni",
+    "name_user": "מני",
     "date": "07/09/2025 10:45"
     },
     {
-    "img_url": "/images/images-posts/sheep-image.jpeg",
-    "description": "woolen sheep",
+    "id": "4",
+    "description": "כבשה חביבה",
     "likes": 0,
-    "name_user": "meir",
+    "name_user": "מאיר",
     "date": "07/09/2025 12:33"
     },
     {
-    "img_url": "/images/images-posts/rabbit-image.jpeg",
-    "description": "cute rabbit",
+    "id": "5",
+    "description": "ארנב קופצני",
     "likes": 0,
-    "name_user": "zoshe",
+    "name_user": "חיים",
     "date": "07/09/2025 15:44"
     },
     {
-    "img_url": "/images/images-posts/lion-image.jpeg",
-    "description": "king lion",
+    "id": "6",
+    "description": "אריה מלך החיות",
     "likes": 0,
-    "name_user": "avi",
+    "name_user": "אבי",
     "date": "07/09/2025 14:20"
     }]
 }

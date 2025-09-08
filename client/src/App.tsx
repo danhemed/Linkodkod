@@ -1,16 +1,17 @@
 import './App.css'
-import data from './data.json'
-import Post from './components/Post'
-import Header from './components/Header'
+import Post from './components/Post.comp'
+import Header from './components/Header.comp'
 import type { PostsType } from './types/PostsType.type'
+import { getPosts } from './api/posts.api'
+
+const posts: PostsType = await getPosts();
 
 function App() {
-  const posts: PostsType = data;
   return (
     <>
     <Header/>
     <div className='posts'>
-      {posts.data.map((post) => (
+      {posts.map((post) => (
         <Post post={post}/>
       ))}
     </div>

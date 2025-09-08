@@ -42,3 +42,12 @@ http://localhost:3003/linkodkod/posts/:id
 מחיקת פוסט: 
 http://localhost:3003/linkodkod/posts/:id
 עם מתודה DELETE
+
+# קבלת תמונות
+
+על ידי גישה לתיקיית PUBLIC 
+באמצעות הנתיב הבא
+http://localhost:3003/linkodkod/images/:name file
+
+לדוגמה:
+http://localhost:3003/linkodkod/images/img.jpeg
