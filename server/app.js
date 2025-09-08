@@ -8,9 +8,10 @@ app.use(express.json());
 
 app.use(cors());
 
-app.use(express.static('public'));
+app.use('/linkodkod/images', express.static('public'));
 
 app.use('/linkodkod', routePost);
+
 
 app.listen(3003, () => {
     console.log("server run on http://localhost:3003 >>>");

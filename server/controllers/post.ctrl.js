@@ -3,7 +3,20 @@ import readFileAsync from '../dal/readfile.dal.js';
 const path = './db/data.json'
 
 export async function getPosts(req, res) {
-    const posts = await readFileAsync(path);
+    try {
+        const posts = await readFileAsync(path);
+        res.status(200).json(JSON.parse(posts).posts);
+    } catch (err) {
+        res.status(400).json({error: err});
+    }
+}
 
-    res.status(200).json(JSON.parse(posts).data);
+export async function getPost(req, res) {
+    const id = Number(req.params.id);
+    try {
+        const posts = await readFileAsync(path);
+        res.status(200).json(JSON.parse(posts).posts[id-1]);
+    } catch (err) {
+        res.status(400).json({error: err});
+    }
 }
