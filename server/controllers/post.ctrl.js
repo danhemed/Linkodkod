@@ -1,9 +1,9 @@
-import { postsData } from '../data.json';
+import readFileAsync from '../dal/readfile.dal.js';
 
-console.log(postsData);
+const path = './db/data.json'
 
-export function getPosts(req, res) {
-    const posts = postsData.data;
+export async function getPosts(req, res) {
+    const posts = await readFileAsync(path);
 
-    res.status(200).json(posts);
+    res.status(200).json(JSON.parse(posts).data);
 }
