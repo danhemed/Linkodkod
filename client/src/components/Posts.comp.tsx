@@ -13,7 +13,7 @@ export default function Posts() {
             setPosts(posts);
         }
         fetchPosts();
-    }, []);
+    });
 
     return (
     <div className='posts'>

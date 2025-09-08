@@ -15,6 +15,6 @@ export async function getPosts() {
 export async function getPost(id:string) {
     const res = await fetch(`http://localhost:3003/linkodkod/posts/${id}`);
 
-    const posts = await res.json()
-    return posts;
+    const post = await res.json();
+    return post;
 }
