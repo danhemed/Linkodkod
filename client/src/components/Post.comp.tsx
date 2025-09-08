@@ -1,20 +1,8 @@
 import { useState } from 'react';
 import './Post.css';
+import type { postType } from '../types/Post.type';
 
-type postType = {
-    id: string,
-    img_url: string,
-    description: string,
-    likes: number,
-    name_user: string,
-    date: string
-};
-
-type postsType = {
-    post: postType
-}
-
-export default function Post({post}: postsType) {
+export default function Post({post}: postType) {
     const [likes, setLikes] = useState(0);
 
     function counterLikes() {

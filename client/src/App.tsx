@@ -1,20 +1,17 @@
 import './App.css'
-import Post from './components/Post.comp'
 import Header from './components/Header.comp'
-import type { PostsType } from './types/PostsType.type'
-import { getPosts } from './api/posts.api'
-
-const posts: PostsType = await getPosts();
+import SearchPost from './pages/SearchPost'
+import Home from './pages/Home'
+import { Route, Routes } from 'react-router'
 
 function App() {
   return (
     <>
     <Header/>
-    <div className='posts'>
-      {posts.map((post) => (
-        <Post post={post}/>
-      ))}
-    </div>
+    <Routes>
+        <Route index element={<Home />} />
+        <Route path="searchPost" element={<SearchPost/>}/>
+      </Routes>
     </>
   )
 }
