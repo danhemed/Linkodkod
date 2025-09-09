@@ -2,7 +2,7 @@ import Post from './Post.comp';
 import type { postsType } from '../types/Post.type';
 import { getPosts } from '../api/posts.api';
 import { useEffect, useState } from 'react';
-import './Posts.css'
+import '../css/Posts.css'
 
 export default function Posts() {
     const [posts, setPosts] = useState<postsType[]>([]);

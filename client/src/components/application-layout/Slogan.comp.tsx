@@ -1,4 +1,4 @@
-import './Slogan.css'
+import '../../css/Slogan.css'
 
 export default function Slogan() {
   return (

@@ -2,34 +2,39 @@ import Post from '../components/Post.comp'
 import { getPost } from "../api/posts.api"
 import { useState, useEffect } from "react"
 import type { postType } from "../types/Post.type"
-import './SearchPost.css'
+import '../css/SearchPost.css'
 
 
 export default function SearchPost() {
-  const [postt, setPostt] = useState({});
+  const [postFound, setPostFound] = useState({});
   const [id, setId] = useState("");
-  
-  function handleId(e:string) {
-    setId(prevId => {
-      return prevId + e;
-    })
+  const [found, setFound] = useState(false);
+
+  function handleId(e: string) {
+    setId(e);
   }
-  
+
   useEffect(() => {
     const fetchPosts = async () => {
-      const post: postType = await getPost(id);
-      console.log(post);
-      setPostt(post);
+      console.log('id', id);
+      console.log('postFound', postFound);
+      if (id) {
+        const post: postType = await getPost(id);
+        setPostFound(post);
+        setFound(true);
+      }
     }
     fetchPosts();
   }, [id]);
 
-  console.log(postt);
-
   return (
     <div id="searchpost">
-    <input type="text" onChange={(e) => handleId(e.target.value)}/>
-    <Post post={postt} />
+      <div id="search">
+        <h3>חפש פוסט:</h3>
+        <input type="text" onChange={(e) => handleId(e.target.value)} placeholder='🔍 חפש לפי ID ...' />
+      </div>
+      {found ? <Post post={postFound} /> : <div><br />עדיין לא נמצא כלום...</div>}
+    
     </div>
   )
 }

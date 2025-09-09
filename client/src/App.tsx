@@ -1,4 +1,4 @@
-import './App.css'
+import './css/App.css'
 import Header from './components/Header.comp'
 import SearchPost from './pages/SearchPost'
 import Home from './pages/Home'
