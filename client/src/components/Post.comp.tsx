@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './Post.css';
+import '../css/Post.css';
 import type { postType } from '../types/Post.type';
 
 export default function Post({post}: postType) {
