@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import '../css/Post.css';
 import type { postType } from '../types/Post.type';
+import { Link } from 'react-router';
 
 export default function Post({post}: postType) {
     const [likes, setLikes] = useState(0);
@@ -12,6 +13,7 @@ export default function Post({post}: postType) {
     }
 
     return (
+        <Link className='post-link' to={`/posts/${post.id}`}>
         <article className="post">
             <div className="block-img">
             <img src={`http://localhost:3003/linkodkod/images/${post.id}.jpeg`} alt={post.description} />
@@ -27,5 +29,6 @@ export default function Post({post}: postType) {
                 </div>
             </div>
         </article>
+        </Link>
     )
 }
