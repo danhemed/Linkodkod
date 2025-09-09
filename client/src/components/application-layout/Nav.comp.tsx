@@ -5,7 +5,8 @@ export default function Nav() {
   return (
     <nav>
         <Link className='link' to="/">בית</Link>
-        <Link className='link' to="/searchPost">חיפוש פוסט</Link>
+        <Link className='link' to="/search-post">חיפוש פוסט</Link>
+        <Link className='link' to="/add-post">הוסף פוסט</Link>
     </nav>
   )
 }

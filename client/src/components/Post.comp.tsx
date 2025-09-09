@@ -16,11 +16,11 @@ export default function Post({post}: postType) {
         <Link className='post-link' to={`/posts/${post.id}`}>
         <article className="post">
             <div className="block-img">
-            <img src={`http://localhost:3003/linkodkod/images/${post.id}.jpeg`} alt={post.description} />
+            <img src={`http://localhost:3003/linkodkod/images/${post.id}.jpeg`} alt={post.name_post} />
             </div>
             <div className="under-post">
                 <div className='des-and-likes'>
-                    <p>{post.description}</p>
+                    <p>{post.name_post}</p>
                     <button className='btn-likes' onClick={counterLikes}>{likes} ❤️</button>
                 </div>
                 <div className='name-and-date'>

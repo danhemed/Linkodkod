@@ -25,7 +25,7 @@
     padding: 10px 5vw;
     font-size: 20px;
     font-weight: 500;
-    border-radius: 50px;
+    border: 1px solid rgb(1 61 109);
 }
 
 #search > input::placeholder {

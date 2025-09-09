@@ -1,7 +1,7 @@
 export async function getPosts() {
     let posts;
     const cached = localStorage.getItem("posts");
-    
+
     if (cached) {
         posts = JSON.parse(cached);
     } else {
@@ -12,9 +12,19 @@ export async function getPosts() {
     return posts;
 }
 
-export async function getPost(id:string) {
+export async function getPost(id: string) {
     const res = await fetch(`http://localhost:3003/linkodkod/posts/${id}`);
 
     const post = await res.json();
     return post;
+}
+
+export async function addPost(post: {}) {
+    await fetch(`http://localhost:3003/linkodkod/posts`, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(post)
+    })
 }
