@@ -2,6 +2,7 @@ import type { JSX } from 'react/jsx-runtime';
 
 export type post = {
     id: string,
+    name_post: string,
     description: string,
     likes: number,
     name_user: string,

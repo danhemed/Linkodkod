@@ -1,0 +1,63 @@
+#form-post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(235, 235, 235);
+    padding: 20px 10vw;
+    gap: 10px;
+}
+
+#form-post > label {
+    font-size: 20px;
+    color: rgb(1 61 109);
+    font-weight: 500;
+}
+
+.input-post {
+    padding: 10px 5vw;
+    border: 1px solid rgb(1 61 109);
+    font-size: 20px;
+    font-weight: 500;
+    width: 50vw;
+}
+
+.btn-submit {
+    display: flex;
+    gap: 5vw;
+}
+
+.btn-submit > input {
+    background-color: rgb(1 61 109);
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 500;
+    border: 1px solid rgba(0, 0, 0, 0);
+    color: white;
+    cursor: pointer;
+}
+
+.btn-submit > input:hover {
+    background-color: rgb(235, 235, 235);
+    border: 1px solid rgb(1 61 109);
+    color: rgb(1 61 109);
+}
+
+#input-file {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+input::file-selector-button {
+    padding: 10px 10px;
+    background-color: rgb(1 61 109);
+    color: white;
+    border: 1px solid rgba(0, 0, 0, 0);
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+input::file-selector-button:hover {
+    background-color: rgb(235, 235, 235);
+    border: 1px solid rgb(1 61 109);
+    color: rgb(1 61 109);
+}

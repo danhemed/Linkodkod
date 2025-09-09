@@ -1,45 +1,84 @@
 {
-    "posts" : [
-    {
-    "id": "1",
-    "description": "כלב מחמד",
-    "likes": 0,
-    "name_user": "דן",
-    "date": "07/09/2025 11:04"
-    },
-    {
-    "id": "2",
-    "description": "סוס חזק",
-    "likes": 0,
-    "name_user": "אלי",
-    "date": "07/09/2025 13:08"
-    },
-    {
-    "id": "3",
-    "description": "דוב מפחיד",
-    "likes": 0,
-    "name_user": "מני",
-    "date": "07/09/2025 10:45"
-    },
-    {
-    "id": "4",
-    "description": "כבשה חביבה",
-    "likes": 0,
-    "name_user": "מאיר",
-    "date": "07/09/2025 12:33"
-    },
-    {
-    "id": "5",
-    "description": "ארנב קופצני",
-    "likes": 0,
-    "name_user": "חיים",
-    "date": "07/09/2025 15:44"
-    },
-    {
-    "id": "6",
-    "description": "אריה מלך החיות",
-    "likes": 0,
-    "name_user": "אבי",
-    "date": "07/09/2025 14:20"
-    }]
+    "posts": [
+        {
+            "id": "1",
+            "name_post": "כלב מחמד",
+            "description": "הכלב הכי חמוד בעולם",
+            "likes": 0,
+            "name_user": "דן",
+            "date": "01/09/2025 11:04"
+        },
+        {
+            "id": "2",
+            "name_post": "סוס חזק",
+            "description": "הסוס הכי חזק בעולם",
+            "likes": 0,
+            "name_user": "אלי",
+            "date": "02/09/2025 13:08"
+        },
+        {
+            "id": "3",
+            "name_post": "דוב מפחיד",
+            "description": "הדוב הכי מפחיד בעולם",
+            "likes": 0,
+            "name_user": "מני",
+            "date": "03/09/2025 10:45"
+        },
+        {
+            "id": "4",
+            "name_post": "כבשה חביבה",
+            "description": "הכבשה הכי חביבה בעולם",
+            "likes": 0,
+            "name_user": "מאיר",
+            "date": "04/09/2025 12:33"
+        },
+        {
+            "id": "5",
+            "name_post": "ארנב קופצני",
+            "description": "הארנב הכי קופצני בעולם",
+            "likes": 0,
+            "name_user": "חיים",
+            "date": "05/09/2025 15:44"
+        },
+        {
+            "id": "6",
+            "name_post": "אריה מלך החיות",
+            "description": "האריה ידוע כמלך החיות",
+            "likes": 0,
+            "name_user": "אבי",
+            "date": "06/09/2025 14:20"
+        },
+        {
+            "id": "7",
+            "name_post": "שפן מחמד",
+            "description": "השפן הכי חמוד בעולם",
+            "likes": 0,
+            "name_user": "עוזי",
+            "date": "07/09/2025 17:04"
+        },
+        {
+            "id": "8",
+            "name_post": "דולפין שחיין",
+            "description": "הדולפין הכי שחיין בעולם",
+            "likes": 0,
+            "name_user": "רמי",
+            "date": "08/09/2025 13:06"
+        },
+        {
+            "id": "8",
+            "name_post": "יונה עפה",
+            "description": "היונה הכי עפה בעולם",
+            "likes": 0,
+            "name_user": "יוני",
+            "date": "1757425582879"
+        },
+        {
+            "id": "8",
+            "name_post": "חתול זבל",
+            "description": "החתול הכי חי בזבל בעולם",
+            "likes": 0,
+            "name_user": "חות'י",
+            "date": "Tue, 09 Sep 2025 14:05:14 GMT"
+        }
+    ]
 }
