@@ -1,4 +1,3 @@
-import { Link, Outlet } from 'react-router'
 import SignUp from './SignUp.comp'
 
 export default function Login() {

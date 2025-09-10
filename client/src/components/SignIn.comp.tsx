@@ -31,22 +31,22 @@ export default function SignIn() {
   return (
     <>
         <section className="page">
-        <h1>Sign In</h1>
+        <h1>היכנס</h1>
         <br />
         <form onSubmit={comeIn}>
             <span style={{ color: 'red' }}>*  </span>
-            <label htmlFor="username">Enter UserName:</label>
+            <label htmlFor="username">הכנס את שם המשתמש:</label>
             <br />
-            <input className="input-btn"type="text" name="username" placeholder="example: israel israeli" required/>
+            <input className="input-btn"type="text" name="username" placeholder="לדוגמה: ישראל ישראלי" required/>
             <br />
             <br />
             <span style={{ color: 'red' }}>*  </span>
-            <label htmlFor="password">Enter Password:</label>
+            <label htmlFor="password">הכנס סיסמה:</label>
             <br />
-            <input className="input-btn" type="text" name="password" placeholder="example: 1234" required/>
+            <input className="input-btn" type="text" name="password" placeholder="לדוגמה: 1234" required/>
             <br />
             <br />
-            <button type="submit">Come In</button>
+            <button type="submit">היכנס</button>
         </form>
         </section>
     </>
