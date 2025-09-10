@@ -13,13 +13,15 @@ export default function Posts() {
             setPosts(posts);
         }
         fetchPosts();
-    });
+    },[]);
 
     return (
-    <div className='posts'>
-        {posts.map((post) => (
-            <Post post={post}/>
-        ))}
-    </div>
+        <>
+        <div className='posts'>
+            {posts.map((post) => (
+                <Post post={post}/>
+            ))}
+        </div>
+        </>
   )
 }
