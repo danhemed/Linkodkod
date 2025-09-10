@@ -14,8 +14,8 @@ nav {
 }
 
 .link:hover {
-    color: rgb(3, 14, 22);
-    border-bottom: 1px solid rgb(3, 14, 22);
+    color: #f45d4f;
+    border-bottom: 1px solid #f45d4f;
 }
 
 .link:active {
