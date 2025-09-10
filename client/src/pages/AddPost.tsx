@@ -1,9 +1,13 @@
 import { addPost } from '../api/posts.api'
 import '../css/AddPost.css'
-import { useEffect, useState } from 'react'
+import { useRef } from 'react'
+import type { post } from '../types/Post.type';
+
 
 export default function AddPost() {
-  const [post, setPost] = useState({
+  let formData = new FormData();
+
+  const post = useRef<post>({
     id: "",
     name_post: "",
     description: "",
@@ -12,23 +16,38 @@ export default function AddPost() {
     date: ""
   });
   
-  async function sendData(e) {
+  async function sendData(e: any) {
     e.preventDefault();
     console.log(e);
     const date = new Date();
 
-    setPost({
-    id: "8",
+    const posts = localStorage.getItem('posts');
+    post.current = {
+    id: `${JSON.parse(posts).length}`,
     name_post: e.target[0].value,
     description: e.target[1].value,
     likes: 0,
     name_user: e.target[2].value,
     date: `${date.getDay()}/${date.getMonth()}/${date.getFullYear()} ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`
-    })
-    if (post.name_post && post.name_user) {
-      await addPost(post);
-      window.location.assign('http://localhost:5173/');
     }
+
+    formData.append('image', e.target[3].files[0]);
+
+    const fetchPost = async () => {
+      await addPost(post.current);
+    }
+    fetchPost();
+
+    // לא עובד
+    const fetchImg = async () => {
+        await fetch(`http://localhost:3003/linkodkod/posts/image`, {
+        method: "POST",
+        body: formData
+    })
+    }
+    // fetchImg();
+    localStorage.clear();
+    window.location.assign('http://localhost:5173/');
   }
 
   return (
@@ -42,13 +61,12 @@ export default function AddPost() {
         <label htmlFor="name_user">שמך:</label>
         <input className='input-post' type="text" name="name_post" required/>
         <br />
-        <label htmlFor="name_user">העלה תמונה לפוסט:</label>
-        <input id="input-file" type="file" name="name_post"/>
+        <label htmlFor="image">העלה תמונה לפוסט:</label>
+        <input id="input-file" type="file" name="image"/>
         <br />
         <div className="btn-submit">
         <input type="submit" value='שתף את כולם'/>
         </div>
-        {/* <h5 className='create-new-post'>יש איזה כיף! נוצר פוסט חדש!</h5> */}
     </form>
   )
 }
