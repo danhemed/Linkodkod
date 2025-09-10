@@ -51,3 +51,17 @@ http://localhost:3003/linkodkod/images/:name file
 
 לדוגמה:
 http://localhost:3003/linkodkod/images/img.jpeg
+
+# נתיבים ליוזרים
+
+קבלת כל היוזרים:
+http://localhost:3003/linkodkod/users
+עם מתודה GET
+
+קבלת יוזר ספציפי:
+http://localhost:3003/linkodkod/users/:id
+עם מתודה GET
+
+יצירת יוזר:
+http://localhost:3003/linkodkod/users
+עם מתודה POST
