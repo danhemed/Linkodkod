@@ -10,6 +10,7 @@ import SignIn from './components/SignIn.comp'
 import SignUp from './components/SignUp.comp'
 import Footer from './components/Footer.comp'
 import Aba from './components/Aba'
+import Terms from './components/Terms'
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
           <Route path="/signup" element={<SignUp />} />
           <Route path="/signin" element={<SignIn />} />
         </Route>
+        <Route path="Terms_and_Conditions" element={<Terms/>}/>
     </Routes>
     <Footer/>
     </main>
