@@ -31,7 +31,7 @@ export default function SearchPost() {
     <div id="searchpost">
       <div id="search">
         <h3>חפש פוסט:</h3>
-        <input type="text" onChange={(e) => handleId(e.target.value)} placeholder='🔍 חפש לפי ID ...' />
+        <input className="input-btn" type="text" onChange={(e) => handleId(e.target.value)} placeholder='🔍 חפש לפי ID ...' />
       </div>
       {found ? <Post post={postFound} /> : <div><br />עדיין לא נמצא כלום...</div>}
     

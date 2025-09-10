@@ -21,23 +21,24 @@
     width: 50vw;
 }
 
-.btn-submit {
+#btn-submit {
     display: flex;
     gap: 5vw;
 }
 
-.btn-submit > input {
+#btn-submit > input {
     background-color: rgb(1 61 109);
     padding: 10px 20px;
     font-size: 20px;
     font-weight: 500;
     border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 50px;
     color: white;
     cursor: pointer;
 }
 
-.btn-submit > input:hover {
-    background-color: rgb(235, 235, 235);
+#btn-submit > input:hover {
+    background-color: #f45d4f;
     border: 1px solid rgb(1 61 109);
     color: rgb(1 61 109);
 }
@@ -47,7 +48,7 @@
     margin-top: 10px;
 }
 
-input::file-selector-button {
+#input-file::file-selector-button {
     padding: 10px 10px;
     background-color: rgb(1 61 109);
     color: white;
@@ -56,7 +57,7 @@ input::file-selector-button {
     margin-left: 10px;
 }
 
-input::file-selector-button:hover {
+#input-file::file-selector-button:hover {
     background-color: rgb(235, 235, 235);
     border: 1px solid rgb(1 61 109);
     color: rgb(1 61 109);

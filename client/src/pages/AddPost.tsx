@@ -53,18 +53,18 @@ export default function AddPost() {
   return (
     <form id="form-post" onSubmit={(e) => sendData(e)}>
         <label htmlFor="name_post">שם הפוסט:</label>
-        <input className='input-post' type="text" name="name_post" required/>
+        <input className='input-post input-btn' type="text" name="name_post" required/>
         <br />
         <label htmlFor="description">תיאור הפוסט:</label>
-        <input className='input-post' type="text" name="name_post"/>
+        <input className='input-post input-btn' type="text" name="name_post"/>
         <br />
         <label htmlFor="name_user">שמך:</label>
-        <input className='input-post' type="text" name="name_post" required/>
+        <input className='input-post input-btn' type="text" name="name_post" required/>
         <br />
         <label htmlFor="image">העלה תמונה לפוסט:</label>
         <input id="input-file" type="file" name="image"/>
         <br />
-        <div className="btn-submit">
+        <div id="btn-submit">
         <input type="submit" value='שתף את כולם'/>
         </div>
     </form>
