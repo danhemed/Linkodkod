@@ -1,6 +1,8 @@
 import readFileAsync from '../dal/readfile.dal.js';
 import appendFileAsync from '../dal/writeFile.dal.js';
 import multerImg from '../dal/writeFileImg.js';
+import deletePostFileAsync from '../dal/deletePost.dal.js';
+import updatePostFileAsync from '../dal/updatePost.dal.js';
 
 const path = './db/data.json'
 
@@ -30,6 +32,27 @@ export async function addPost(req, res) {
         res.status(201).json({message: "create a new post"});
     } catch (err) {
         res.status(400).json({error: err.message});
+    }
+}
+
+export async function updatePost(req, res) {
+    const data = req.body;
+    const id = req.params.id;
+    try {
+        await updatePostFileAsync(path, data, id);
+        res.status(200).json({message: "update post"});
+    } catch (err) {
+        res.status(204).json({error: err.message});
+    }
+}
+
+export async function deletePost(req, res) {
+    const id = req.params.id;
+    try {
+        await deletePostFileAsync(path, id);
+        res.status(200).json({message: "delete post"});
+    } catch (err) {
+        res.status(204).json({error: err.message});
     }
 }
 

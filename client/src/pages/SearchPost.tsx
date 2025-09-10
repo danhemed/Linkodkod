@@ -16,8 +16,6 @@ export default function SearchPost() {
 
   useEffect(() => {
     const fetchPosts = async () => {
-      console.log('id', id);
-      console.log('postFound', postFound);
       if (id) {
         const post: postType = await getPost(id);
         setPostFound(post);
