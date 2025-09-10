@@ -28,3 +28,13 @@ export async function addPost(post: {}) {
         body: JSON.stringify(post)
     })
 }
+
+export async function updatePost(post: {}) {
+    await fetch(`http://localhost:3003/linkodkod/posts`, {
+        method: "PUT",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(post)
+    })
+}

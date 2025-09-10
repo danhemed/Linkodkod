@@ -35,8 +35,8 @@ http://localhost:3003/linkodkod/posts/:id
 http://localhost:3003/linkodkod/posts
 עם מתודה POST
 
-עדכון פוסט: 
-http://localhost:3003/linkodkod/posts/:id
+עדכון פוסטים: 
+http://localhost:3003/linkodkod/posts/
 עם מתודה PUT
 
 מחיקת פוסט: 
