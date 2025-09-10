@@ -1,0 +1,26 @@
+.dynamic-post-page {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    margin: 50px 25vw;
+    background-color: rgb(235, 235, 235);
+}
+
+.block-img-dynamic {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.dynamic-post-page img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+#des {
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+}
