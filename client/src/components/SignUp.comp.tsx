@@ -36,22 +36,22 @@ export default function SignUp() {
   return (
     <>
       <section className="page">
-        <h1>Sign Up</h1>
+        <h1>הירשם</h1>
         <br />
         <form onSubmit={createUser}>
           <span style={{ color: 'red' }}>*  </span>
-          <label htmlFor="username">Enter User Name:</label>
+          <label htmlFor="username">הכנס את שם המשתמש:</label>
+            <br />
+            <input className="input-btn"type="text" name="username" placeholder="לדוגמה: ישראל ישראלי" required/>
+            <br />
+            <br />
+            <span style={{ color: 'red' }}>*  </span>
+            <label htmlFor="password">הכנס סיסמה:</label>
+            <br />
+            <input className="input-btn" type="text" name="password" placeholder="לדוגמה: 1234" required/>
           <br />
-          <input className="input-btn" type="text" name="username" placeholder="example: israel israeli" required />
           <br />
-          <br />
-          <span style={{ color: 'red' }}>*  </span>
-          <label htmlFor="password">Enter Password:</label>
-          <br />
-          <input className="input-btn" type="text" name="password" placeholder="example: 1234" required />
-          <br />
-          <br />
-          <button type="submit">Register</button>
+          <button type="submit">הירשם</button>
         </form>
       </section>
     </>

@@ -5,8 +5,8 @@ export default function Aba() {
     <div>
     <section>
         <nav id="login-nav">
-          <Link className="link" to='signup'>sign up</Link>
-          <Link className="link" to='signin'>sign in</Link>
+          <Link className="link" to='signup'>הירשם</Link>
+          <Link className="link" to='signin'>היכנס</Link>
         </nav>
       </section>
         <Outlet />

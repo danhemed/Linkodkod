@@ -4,8 +4,8 @@ import '../css/Footer.css'
 export default function Footer() {
   return (
     <footer>
-      <Link className="link" to='/Terms_and_Conditions'>Terms and Conditions</Link>
-      <p className='by'>Created by 'Dan Hemed'</p>
+      <Link className="link" to='/Terms_and_Conditions'>תנאים והגבלות</Link>
+      <p className='by'>נוצר ע"י דן חמד</p>
     </footer>
   )
 }
